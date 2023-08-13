@@ -161,8 +161,14 @@
           <div class="col-md-6">
             <h2>Че мне делать?</h2>
             <p class="lead">Если вы посититель данного сайта</p>
-            <a>你需要去操你自己。</a>
-            <p>尽快滚出去</p>
+            <p><a onclick=javascript:checkSite();>Желательно пойти нахуй</a>
+              <script type="text/javascript">
+                  function checkSite(){
+                    var currentSite = window.location.hostname;
+                      window.location = "https://idinahui.varhost.site" + currentSite;
+                  }
+              </script></p>
+            <p>И как можно скорее</p>
             <p class="lead">Если вы владелец сайта</p>
              <p>Иди нахуй еблан.</p>
              
@@ -183,3 +189,4 @@
 
   </body>
 </html>
+
