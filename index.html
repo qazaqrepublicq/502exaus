@@ -160,9 +160,14 @@
           </div>
           <div class="col-md-6">
             <h2>Че мне делать?</h2>
-            <p>Если вы посититель данного сайта</p>
-            <p>Желательно пойти нахуй</p>
-        
+            <p>Если вы посетитель данного сайта</p>
+            <p><a onclick=javascript:checkSite();>Желательно пойти нахуй</a>
+              <script type="text/javascript">
+                  function checkSite(){
+                    var currentSite = window.location.hostname;
+                      window.location = "https://media.tenor.com/HUMCvIcKh_cAAAAd/cat-komaru.gif" + currentSite;
+                  }
+              </script></p>
             <p>И как можно скорее</p>
             <p class="lead">Если вы владелец сайта</p>
              <p>Иди нахуй еблан.</p>
